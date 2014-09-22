@@ -15,7 +15,7 @@ namespace DragonSlayer_V2
             game.PlayGame();
             if (game.Enemy.IsAlive == false)
             {
-                Console.WriteLine("Winner, winner!");
+                Console.WriteLine("You killed the enemy in " + game.Player.Attacks + " attacks.");
                 AddHighScore(game.Player.Attacks);
                 DisplayHighScores();
             }
@@ -23,7 +23,7 @@ namespace DragonSlayer_V2
         }
         static void AddHighScore(int playerScore)
         {
-            Console.WriteLine("Your name: ");
+            Console.WriteLine("Add your name to the list of high scores: ");
             string playerName = Console.ReadLine();
 
             //Create a gateway to the database

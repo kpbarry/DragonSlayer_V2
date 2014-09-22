@@ -48,14 +48,14 @@ namespace DragonSlayer_V2
             int enemyHP = Convert.ToInt32(enemyHPString);
 
             //New enemy and player
-            this.Player = new Player(playerHP);
+            this.Player = new Player(playerHP, "Dungeon");
             this.Enemy = new Enemy(enemyName, enemyHP);
             Console.WriteLine("You have 3 options for how to fight your enemy.\n 1. Throw brick (70% hit, 20-35 damage)\n 2. Dust attack (100% hit, 10-15 damage)\n 3. Heal (Repair self for 10-20 HP)\nPlease choose an action.\n");
             while (this.Player.IsAlive && this.Enemy.IsAlive)
             {
                 DisplayCombatInfo();
-                this.Enemy.TakeDamage(this.Player.DoAttack());
-                this.Player.TakeDamage(this.Player.DoAttack());
+                Player.Attack(Enemy);
+                Enemy.Attack(Player);
             }
         }
 

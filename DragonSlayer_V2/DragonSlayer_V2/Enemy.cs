@@ -10,7 +10,7 @@ namespace DragonSlayer_V2
     {
         public string Name { get; set; }
         public int HP { get; set; }
-
+        private Random rng = new Random();
         //Heh, public enemy
         public Enemy(string name, int hp)
         {
@@ -26,28 +26,19 @@ namespace DragonSlayer_V2
             }
         }
 
-        public int DoAttack()
+        public void Attack(Player player)
         {
-            Random rng = new Random();
-            int enemyDmg = rng.Next(5, 16);
-            int HitChance = rng.Next(1, 101);
-            if (HitChance < 20)
+            //80% chance to hit
+            if (rng.Next(0, 101) > 20)
             {
-                Console.WriteLine("The " + this.Name + " barely missed you!");
-                return 0;
+                int damage = rng.Next(5, 16);
+                player.HP -= damage;
+                Console.WriteLine("{0} hit you for {1} damage!", this.Name, damage);
             }
-            //Take damage
             else
             {
-                return enemyDmg;
+                Console.WriteLine("{0} missed {1}.", this.Name, player.Name);
             }
-        }
-
-        public void TakeDamage(int damage)
-        {
-            this.HP -= damage;
-            if (this.HP <= 0)
-                Console.WriteLine("You have slain the dragon!");
         }
     }
 }
