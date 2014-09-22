@@ -1,0 +1,8 @@
+C:\Users\Technologist\Documents\GitHub\DragonSlayer_V2\DragonSlayer_V2\DragonSlayer_V2\bin\Debug\DragonSlayer_V2.exe.config
+C:\Users\Technologist\Documents\GitHub\DragonSlayer_V2\DragonSlayer_V2\DragonSlayer_V2\obj\Debug\DragonSlayer_V2.csprojResolveAssemblyReference.cache
+C:\Users\Technologist\Documents\GitHub\DragonSlayer_V2\DragonSlayer_V2\DragonSlayer_V2\bin\Debug\DragonSlayer_V2.exe
+C:\Users\Technologist\Documents\GitHub\DragonSlayer_V2\DragonSlayer_V2\DragonSlayer_V2\bin\Debug\DragonSlayer_V2.pdb
+C:\Users\Technologist\Documents\GitHub\DragonSlayer_V2\DragonSlayer_V2\DragonSlayer_V2\bin\Debug\EntityFramework.dll
+C:\Users\Technologist\Documents\GitHub\DragonSlayer_V2\DragonSlayer_V2\DragonSlayer_V2\bin\Debug\EntityFramework.xml
+C:\Users\Technologist\Documents\GitHub\DragonSlayer_V2\DragonSlayer_V2\DragonSlayer_V2\obj\Debug\DragonSlayer_V2.exe
+C:\Users\Technologist\Documents\GitHub\DragonSlayer_V2\DragonSlayer_V2\DragonSlayer_V2\obj\Debug\DragonSlayer_V2.pdb
